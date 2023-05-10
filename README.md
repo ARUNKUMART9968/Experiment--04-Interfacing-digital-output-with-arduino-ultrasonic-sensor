@@ -56,12 +56,35 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 ### PROGRAM 
 
+#define echoPin 9
+#define trigPin 10
+long duration;
+int distance;
+ 
+void setup() {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  Serial.begin(9600);
+}
+void loop() {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+   digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+   digitalWrite(trigPin, LOW);
+  duration=pulseIn(echoPin, HIGH);
+  distance=duration * 0.034 / 2;
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println("cm");
+}
 
 
 
 
 
 ### Distance vs measurement table 
+![robo 4](https://github.com/ARUNKUMART9968/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/121215794/aa6f3147-3a03-4eb3-b475-72068f275a75)
 
 			
  
@@ -88,6 +111,7 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 ### RESULTS
 
+![result robo](https://github.com/ARUNKUMART9968/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/121215794/363f82cc-e099-4571-ad79-a5029f7a380a)
 
 
  
