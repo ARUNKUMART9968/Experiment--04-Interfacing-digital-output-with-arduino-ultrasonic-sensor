@@ -112,6 +112,5 @@ void loop() {
 ### RESULTS
 
 ![result robo](https://github.com/ARUNKUMART9968/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/121215794/363f82cc-e099-4571-ad79-a5029f7a380a)
-
-
+using an  ultrasonic pair and measure the distance in centimeters is successfully measured
  
