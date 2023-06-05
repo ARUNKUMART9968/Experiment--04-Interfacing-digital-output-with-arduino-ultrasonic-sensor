@@ -55,7 +55,7 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 
 ### PROGRAM 
-
+```
 #define echoPin 9
 #define trigPin 10
 long duration;
@@ -78,7 +78,7 @@ void loop() {
   Serial.print(distance);
   Serial.println("cm");
 }
-
+```
 
 
 
